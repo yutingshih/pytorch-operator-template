@@ -1,0 +1,14 @@
+[project]
+name = "torch-operator-template"
+version = "0.1.0"
+requires-python = ">=3.10"
+dependencies = [
+    "torch>=2.10.0",
+]
+
+[build-system]
+requires = ["scikit-build-core", "pybind11", "torch"]
+build-backend = "scikit_build_core.build"
+
+[tool.scikit-build]
+cmake.version = ">=3.18" # required by torch
